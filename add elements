@@ -1,0 +1,66 @@
+# Create a dictionary
+
+ename = {
+    "ename": "rahul",
+    "age": 20,
+    "office name": "techcrop",
+    "salary": 85000
+}
+
+# Add an element
+
+ename["department"] = "IT"
+
+print("After adding:")
+print(ename)
+
+
+# Update an element
+
+ename["age"] = 21
+
+print("After updating:")
+print(ename)
+
+
+# Delete an element
+
+del ename["office name"]
+
+print("After deleting:")
+print(ename)
+
+
+# keys()
+
+print("Keys:")
+print(ename.keys())
+
+
+# values()
+
+print("Values:")
+print(ename.values())
+
+
+# items()
+
+print("Items:")
+print(ename.items())
+
+
+# get()
+
+print("Salary:", ename.get("salary"))
+print("Name:", ename.get("name", "Not available"))
+
+
+# update()
+
+ename.update({
+    "age": 22,
+    "salary": 90000
+})
+
+print("After update function:")
+print(ename)
